@@ -60,8 +60,13 @@ python main.py
 3. Predict CSV tab: load a saved model, then classify a new traffic CSV or PCAP and save the predictions.
 
 ## Dataset
+This project uses the CTU-13 dataset (Stratosphere Lab, CTU Prague). The capture is over 2 GB, so it is not stored in this repository. Download it from the official page:
 
-This project uses the CTU-13 botnet captures (Stratosphere Lab, CTU Prague). The capture file is about 1.5 GB, so it is not stored in the repository itself. Download it from the Releases page of this repository (https://github.com/deepikareddy07/botnet-detection/releases), or get the original from the CTU-13 page, and place it in the `data/` folder.
+https://www.stratosphereips.org/datasets-ctu13
+
+Each scenario folder (for example CTU-Malware-Capture-Botnet-50, which is scenario 9) is on https://mcfp.felk.cvut.cz/publicDatasets/ and contains the capture file and a README that lists the infected host IP. Scenario used in this project: Scenario 9 (CTU-Malware-Capture-Botnet-50).
+
+Place the downloaded file in the data/ folder.
 
 1. Train and Evaluate tab, click Load PCAP File and select the capture. Compressed `.pcap.bz2` and `.pcap.gz` files are read directly.
 2. In the settings dialog, enter the infected host IP of that scenario. The field is pre-filled with 147.32.84.165.
