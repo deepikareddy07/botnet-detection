@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+
+# trained models
+*.pkl
+*.joblib
+
+# large datasets are distributed through GitHub Releases
+data/*
+!data/README.md
+
+# large datasets (hosted outside the repository)
+data/*.pcap
+data/*.pcapng
+data/*.pcap.bz2
+data/*.pcap.gz
